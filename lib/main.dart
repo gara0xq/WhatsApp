@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+import 'features/auth/presentation/screens/enter_email_screen.dart';
 import 'core/getx_services/bindings.dart';
-import 'src/presentation/screens/create_account_screen.dart';
-import 'src/presentation/screens/enter_phone_screen.dart';
-import 'src/presentation/screens/home_screen.dart';
-import 'src/presentation/screens/splash_screen.dart';
-import 'src/presentation/screens/verify_number_screen.dart';
-import 'src/presentation/screens/welcome_screen.dart';
-import 'src/presentation/screens/chat_screen.dart';
+import 'features/auth/presentation/screens/create_account_screen.dart';
+import 'features/auth/presentation/screens/enter_phone_screen.dart';
+import 'features/home/presentation/screens/home_screen.dart';
+import 'features/welcome/presentation/screens/splash_screen.dart';
+import 'features/auth/presentation/screens/verify_number_screen.dart';
+import 'features/welcome/presentation/screens/welcome_screen.dart';
 import 'core/utils/themes.dart';
 
 void main() async {
@@ -31,15 +31,15 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
       initialBinding: GetBindings(),
-      initialRoute: '/home',
+      initialRoute: '/',
       getPages: [
         GetPage(name: '/', page: () => SplashScreen()),
         GetPage(name: '/welcome', page: () => WelcomeScreen()),
         GetPage(name: '/enter_phone', page: () => EnterPhoneScreen()),
+        GetPage(name: '/enter_email', page: () => EnterEmailScreen()),
         GetPage(name: '/verify_number', page: () => VerifyNumberScreen()),
         GetPage(name: '/create_account', page: () => CreateAccountScreen()),
         GetPage(name: '/home', page: () => HomeScreen()),
-        GetPage(name: '/chat', page: () => ChatScreen(chatId: "",)),
       ],
     );
   }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class LightColors {
   static const Color primaryColor = Color(0xff121B22);
-  static const Color secondaryColor = Color(0xff128C7E);
+  static const Color secondaryColor = Color(0xff134d34);
   static const Color accentColor = Color(0xff25D366);
   static const Color backgroundColor = Color(0xffECE5DD);
   static const Color chatBackgroundColor = Color(0xffDCF8C6);
@@ -15,7 +15,7 @@ class LightColors {
 
 class DarkColors {
   static const Color primaryColor = Color(0xff121B22);
-  static const Color secondaryColor = Color(0xff1F2C34);
+  static const Color secondaryColor = Color(0xff134d34);
   static const Color accentColor = Color(0xff00A884);
   static const Color backgroundColor = Color(0xff0B141A);
   static const Color chatBackgroundColor = Color(0xff1E2A30);

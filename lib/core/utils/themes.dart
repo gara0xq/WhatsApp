@@ -5,7 +5,7 @@ class Themes {
   static final light = ThemeData.light().copyWith(
     primaryColor: LightColors.primaryColor,
     colorScheme: ColorScheme.light(
-      secondary: LightColors.accentColor,
+      secondary: LightColors.secondaryColor,
       surface: LightColors.backgroundColor,
     ),
     appBarTheme: AppBarTheme(
@@ -23,7 +23,7 @@ class Themes {
   static final dark = ThemeData.dark().copyWith(
     primaryColor: DarkColors.primaryColor,
     colorScheme: ColorScheme.dark(
-      secondary: DarkColors.accentColor,
+      secondary: DarkColors.secondaryColor,
       surface: DarkColors.backgroundColor,
     ),
     appBarTheme: AppBarTheme(
